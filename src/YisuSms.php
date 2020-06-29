@@ -15,7 +15,6 @@ class YisuSms
         'version'       => 'v1',
         'domain'        => 'api.yisu.com',
         'security'      => true,
-        'product'       => '',
         'access_id'     => '',
         'access_secret' => '',
     ];
