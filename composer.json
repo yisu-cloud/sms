@@ -1,5 +1,5 @@
 {
-    "name": " yisu-cloud/sms",
+    "name": "yisu-cloud/sms",
     "description": "send yisu sms",
     "type": "library",
     "license": "MIT",
