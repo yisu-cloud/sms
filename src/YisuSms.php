@@ -25,7 +25,7 @@ class YisuSms
     {
         $this->config = array_merge($this->config, $config);
         if (empty($this->config['access_id']) || empty($this->config['access_secret'])) {
-            throw new \Exception('accessId or accessSecret is empty');
+            exit('accessId or accessSecret is empty');
         }
     }
 
