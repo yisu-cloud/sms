@@ -1,6 +1,6 @@
 {
     "name": "yisu-cloud/sms",
-    "description": "send yisu sms",
+    "description": "yisu sms library",
     "type": "library",
     "license": "MIT",
     "authors": [

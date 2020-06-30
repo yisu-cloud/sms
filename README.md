@@ -1,5 +1,5 @@
 # yisu-sms
-一个PHP的发送亿速云短信的类库，可用于发送短信，查询短信接收状态信息
+一个亿速云短信接口的PHP类库，可用于发送短信，查询短信接收状态信息
 
 ## 安装
 ```
@@ -20,13 +20,21 @@ composer require yisu-cloud/sms
 ```
 use yisu\sms\YisuSms;
 
-$sms = new YisuSms(['access_id'=>'your yisuyun accessId', 'access_secret'=>'your yisuyun accessSecret']);
+$config = [
+    'access_id'=>'your yisuyun accessId',
+    'access_secret'=>'your yisuyun accessSecret'
+];
+$sms = new YisuSms($config);
 $res = $sms->send("1830668xxxx", 100021, ['name'=>'Lin', 'code'=>123125]);
 ```
 ### 查询短信状态
 ```
 use yisu\sms\YisuSms;
 
-$sms = new YisuSms(['access_id'=>'your yisuyun accessId', 'access_secret'=>'your yisuyun accessSecret']);
+$config = [
+    'access_id'=>'your yisuyun accessId',
+    'access_secret'=>'your yisuyun accessSecret'
+];
+$sms = new YisuSms($config);
 $res = $sms->query('1830668xxxx', '2020-05-01', '2020-05-05', 1, 50);
 ```
