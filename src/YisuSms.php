@@ -47,6 +47,14 @@ class YisuSms
     }
 
 
+    /** 短信发送记录查询
+     * @param string $phone 手机号码
+     * @param string $startDate 开始日期
+     * @param string $endDate 结束日期
+     * @param int $pageIndex 当前页码
+     * @param int $pageSize  分页大小
+     * @return bool|mixed
+     */
     function query($phone='', $startDate='', $endDate='', $pageIndex=1, $pageSize=100) {
         $api = '/sms/querySendStatus';
         $query  = [

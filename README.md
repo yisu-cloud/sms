@@ -27,7 +27,7 @@ $config = [
 $sms = new YisuSms($config);
 $res = $sms->send("1830668xxxx", 100021, ['name'=>'Lin', 'code'=>123125]);
 ```
-### 查询短信状态
+### 短信发送记录查询
 ```
 use yisu\sms\YisuSms;
 
@@ -38,3 +38,5 @@ $config = [
 $sms = new YisuSms($config);
 $res = $sms->query('1830668xxxx', '2020-05-01', '2020-05-05', 1, 50);
 ```
+
+详细接口文档请参考： [https://www.yisu.com/help/index_157_209.html](https://www.yisu.com/help/index_157_209.html, '接口文档')
