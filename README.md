@@ -39,4 +39,4 @@ $sms = new YisuSms($config);
 $res = $sms->query('1830668xxxx', '2020-05-01', '2020-05-05', 1, 50);
 ```
 
-详细接口文档请参考： [https://www.yisu.com/help/index_157_209.html](https://www.yisu.com/help/index_157_209.html, '接口文档')
+详细接口文档请参考： [https://www.yisu.com/help/index_157_209.html](https://www.yisu.com/help/index_157_209.html '接口文档')
